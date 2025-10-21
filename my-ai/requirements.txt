@@ -1,0 +1,11 @@
+fastapi
+uvicorn
+duckduckgo-search
+requests
+beautifulsoup4
+readability-lxml
+rank-bm25
+scikit-learn
+sumy
+python-dotenv
+pypdf

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mon IA Locale</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Mon IA Locale</h1>
+      <div class="controls">
+        <label class="toggle">
+          <input type="checkbox" id="allow-web" />
+          <span>Autoriser recherche web</span>
+        </label>
+        <label class="upload">
+          <input type="file" id="file-input" accept=".txt,.md,.pdf" />
+          <span>Ajouter un fichier</span>
+        </label>
+      </div>
+    </header>
+
+    <main>
+      <section id="chat-window"></section>
+    </main>
+
+    <footer>
+      <form id="chat-form">
+        <input type="text" id="message" placeholder="Posez votre question..." required />
+        <button type="submit">Envoyer</button>
+      </form>
+      <div class="status">
+        <span id="timer">0.0s</span>
+      </div>
+    </footer>
+  </div>
+
+  <template id="message-template">
+    <div class="message">
+      <div class="meta">
+        <span class="role"></span>
+        <span class="time"></span>
+      </div>
+      <div class="content"></div>
+      <ul class="sources"></ul>
+    </div>
+  </template>
+
+  <script src="script.js"></script>
+</body>
+</html>

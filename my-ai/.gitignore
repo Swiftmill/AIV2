@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.log
+.data/
+logs/
+ENV/
+.DS_Store
+
+# runtime caches
+core/__pycache__/
+tests/__pycache__/
+data/logs/
+data/pages/*.html
+data/pages/*.json
